@@ -35,6 +35,7 @@
 
 .image_about {
     width: 100%;
+    border-radius: 50px 50px 50px 50px;
 }
 
 .navbarDark {
@@ -74,4 +75,25 @@
 }
 .servicesText:hover {
     border: 1px solid #008000;
+}
+.contact a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size: 1.1rem;
+    
+    
+}
+.contact{
+    display: flex;
+    flex-direction: column;  
+    align-items: left;
+    justify-content: center;
+    
+}
+.contact span{
+    padding-right: 10px;
+}
+.text-center{
+    margin-bottom: 3rem;
 }
