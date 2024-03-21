@@ -14,8 +14,14 @@ $("#nav-btn").on("click", function () {
     $("#takeover-nav").toggleClass("shown");
     $(".sticky-nav").toggleClass("difference");
   });
+
+  $(".navs").on("click", function () {
+    $("#takeover-nav").removeClass("shown");
+    $(".sticky-nav").removeClass("difference");
+});  
   
   ///Initiation Variables
+  var navs = document.getElementsByClassName("navs");
   var icon_1 = document.getElementById("nav-btn");
   var topLine_1 = document.getElementById("top-line-1");
   var middleLine_1 = document.getElementById("middle-line-1");
@@ -32,6 +38,7 @@ $("#nav-btn").on("click", function () {
   var topRightX_1;
   var bottomLeftX_1;
   var bottomRightX_1;
+  
   
   ///Animation Variables
   var segmentDuration_1 = 15;
