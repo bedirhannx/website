@@ -46,8 +46,11 @@ body::-webkit-scrollbar {
 }
     
 .image_about {
-    width: 100%;
-    border-radius: 50%;
+  height: 75%;
+  width: 55%;
+  border-radius: 50%;
+  object-fit: cover;
+  transform: translateX(50%);
 }
 
  .social-icons {
@@ -100,9 +103,10 @@ body::-webkit-scrollbar {
 }
 .contact{
     display: flex;
-    flex-direction: column;  
-    align-items: left;
+    flex-direction:column;  
+    align-items: center;
     justify-content: center;
+    
     
 }
 .contact span{
@@ -188,6 +192,35 @@ body::-webkit-scrollbar {
   font-size: 1.5rem;
   transform: translateY(10%);
   
+}
+
+.workexpsp{
+  font-weight: 300;
+  font-size: large
+}
+.card-text{
+  font-weight: 650
+}
+
+.card-img-top{
+  object-fit:fill;
+  height: 320px;
+}
+
+.card{
+  height: 100%;
+}
+
+#portfolio{
+  margin-bottom: 4rem
+}
+.g2{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  align-items: center;
+  justify-content: center;
+  column-gap: 5rem;
+  margin-top: 5rem;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap");
@@ -483,6 +516,12 @@ section.hero:after {
   .hero #video-bg {
     object-position: 0 15vw;
   }
+}
+@media screen and (max-width:992px){
+  .g2{
+    grid-template-columns: 1fr;
+    gap: 3rem
+  };
 }
 @media screen and (max-width: 767px) {
   #takeover-nav .nav-menu {
