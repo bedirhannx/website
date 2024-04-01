@@ -47,7 +47,7 @@ body::-webkit-scrollbar {
     
 .image_about {
   height: 75%;
-  width: 55%;
+  width: 50%;
   border-radius: 50%;
   object-fit: cover;
   transform: translateX(50%);
